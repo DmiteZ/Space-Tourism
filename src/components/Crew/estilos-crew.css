@@ -1,0 +1,72 @@
+.main-crew {
+  background: url('../../assets/crew/background-crew-mobile.jpg');
+}
+
+.section-crew {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr;
+  gap: 40px;
+  padding: 24px 24px 56px;
+}
+
+.section-crew h1 {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  justify-self: center;
+}
+
+.article-crew {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, max-content);
+  gap: 32px;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+
+  grid-template-areas:
+    'image-crew'
+    'navigation-menu-crew'
+    'content-crew';
+}
+
+.image-crew {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-area: image-crew;
+}
+
+.navigation-menu-crew {
+  grid-area: navigation-menu-crew;
+}
+
+.content-crew {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  height: 200px;
+  gap: 12px;
+  grid-area: content-crew;
+}
+
+.content-crew h1 {
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 2rem;
+}
+
+.content-crew h2 {
+  opacity: 0.5;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.content-crew p {
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  color: rgb(208, 214, 249);
+}
