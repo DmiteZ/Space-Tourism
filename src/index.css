@@ -8,16 +8,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --color-black: rgb(11, 13, 23);
   --sky-blue: rgb(208, 214, 249);
   --white: rgb(255, 255, 255);
 }
 
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content 1fr;
+  grid-template-rows: max-content;
+  padding-top: 96px;
   gap: 10px;
   position: relative;
 }
