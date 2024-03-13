@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   .main-destination {
-    background: url('../../assets/destination/background-destination-tablet.jpg');
+    background: url('/assets/destination/background-destination-tablet.webp');
   }
 
   .section-destination {
@@ -26,7 +26,7 @@
 
 @media (min-width: 1024px) {
   .main-destination {
-    background: url('../../assets/destination/background-destination-desktop.jpg');
+    background: url('/assets/destination/background-destination-desktop.webp');
   }
 
   .section-destination {

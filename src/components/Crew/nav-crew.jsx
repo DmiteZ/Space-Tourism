@@ -1,8 +1,10 @@
 import React from 'react';
-
+import { crew } from '../../informacion.json';
 import { NavLink } from 'react-router-dom';
 
-export default function NavCrew() {
+export default function NavCrew({ baseRoute }) {
+  const { miembros } = crew;
+  const { douglasHurley, markShuttleworth, victorGlover, anoushehAnsari } = miembros;
   const isNavLinkActive = (isActive) => (isActive ? { opacity: '100' } : {});
 
   /* estilos basados en TailwindCss */
@@ -13,19 +15,19 @@ export default function NavCrew() {
       <NavLink
         style={({ isActive }) => isNavLinkActive(isActive)}
         className={stylesNavLink}
-        to="Douglas-Hurley"></NavLink>
+        to={`${baseRoute}/${douglasHurley.id}`}></NavLink>
       <NavLink
         style={({ isActive }) => isNavLinkActive(isActive)}
         className={stylesNavLink}
-        to="Mark-Shuttleworth"></NavLink>
+        to={`${baseRoute}/${markShuttleworth.id}`}></NavLink>
       <NavLink
         style={({ isActive }) => isNavLinkActive(isActive)}
         className={stylesNavLink}
-        to="Victor-Glover"></NavLink>
+        to={`${baseRoute}/${victorGlover.id}`}></NavLink>
       <NavLink
         style={({ isActive }) => isNavLinkActive(isActive)}
         className={stylesNavLink}
-        to="Anousheh-Ansari"></NavLink>
+        to={`${baseRoute}/${anoushehAnsari.id}`}></NavLink>
     </nav>
   );
 }

@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   .main-technology {
-    background-image: url('../../assets/technology/background-technology-tablet.jpg');
+    background-image: url('/assets/technology/background-technology-tablet.webp');
   }
 
   .section-technology h1 {
@@ -24,7 +24,7 @@
 
 @media (min-width: 1024px) {
   .main-technology {
-    background-image: url('../../assets/technology/background-technology-desktop.jpg');
+    background-image: url('/assets/technology/background-technology-desktop.webp');
   }
 
   .section-technology {

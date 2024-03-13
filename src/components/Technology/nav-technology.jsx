@@ -1,7 +1,10 @@
 import React from 'react';
+import { technology } from '../../informacion.json';
 import { NavLink } from 'react-router-dom';
 
-export default function NavTechnology() {
+export default function NavTechnology({ baseRoute }) {
+  const { terminos } = technology;
+  const { launchVehicle, spacePort, spaceCapsule } = terminos;
   const isNavLinkActive = (isActive) => (isActive ? { background: '#fff', color: '#000' } : {});
 
   /* estilos basados en TailwindCss */
@@ -12,19 +15,19 @@ export default function NavTechnology() {
       <NavLink
         style={({ isActive }) => isNavLinkActive(isActive)}
         className={stylesNavLink}
-        to="launch-vehicle">
+        to={`${baseRoute}/${launchVehicle.id}`}>
         1
       </NavLink>
       <NavLink
         style={({ isActive }) => isNavLinkActive(isActive)}
         className={stylesNavLink}
-        to="space-port">
+        to={`${baseRoute}/${spacePort.id}`}>
         2
       </NavLink>
       <NavLink
         style={({ isActive }) => isNavLinkActive(isActive)}
         className={stylesNavLink}
-        to="space-capsule">
+        to={`${baseRoute}/${spaceCapsule.id}`}>
         3
       </NavLink>
     </nav>

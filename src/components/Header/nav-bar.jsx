@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
+import { header } from '../../informacion.json';
 import { NavLink } from 'react-router-dom';
 
-import { imagesHeader } from './imagesHeader.js';
-
-import useScreenSize from '../../useScreen.js';
+import useScreenSize from '../../use-screen.js';
 
 export default function NavBar() {
-  const { iconHamburger, iconClose } = imagesHeader();
+  const { home, destination, crew, technology, imagenes } = header;
 
   const [isOpen, setIsOpen] = useState(false);
   const { width } = useScreenSize();
@@ -25,7 +24,7 @@ export default function NavBar() {
   };
 
   /* estilos basados en TailwindCss */
-  const stylesIcons = 'hover:cursor-pointer text-2xl text-white';
+  const stylesIcons = 'fixed top-10 right-6 hover:cursor-pointer text-2xl text-white';
   const stylesNavLink = 'md:pb-8 font-normal';
   const stylesSpanNavLink = 'font-semibold md:hidden lg:inline-block';
 
@@ -33,7 +32,7 @@ export default function NavBar() {
     <>
       <div className="max-w-max md:hidden">
         <img
-          src={iconHamburger}
+          src={imagenes.hamburger}
           onClick={() => handleOpenMenu()}
           className={stylesIcons}
           alt="Icon hamburger"
@@ -41,10 +40,10 @@ export default function NavBar() {
       </div>
 
       <nav
-        className={`${navHidden()} nav-container-header  closed pt-8 md:max-h-max md:opened  md:relative md:grid-rows-1 md:grid-cols-mxc4`}>
+        className={`${navHidden()} nav-container-header  closed pt-8 md:max-h-max md:opened pr  md:relative md:grid-rows-1 md:grid-cols-mxc4`}>
         <div className="max-w-max max-h-max justify-self-end pr-5  md:hidden">
           <img
-            src={iconClose}
+            src={imagenes.close}
             alt="Icon close"
             onClick={() => handleCloseMenu()}
             className={stylesIcons}
@@ -55,29 +54,29 @@ export default function NavBar() {
           <NavLink
             style={({ isActive }) => isNavLinkActive(isActive)}
             className={stylesNavLink}
-            to="/home">
-            <span className={stylesSpanNavLink}>00</span> Home
+            to={`/${home.path}`}>
+            <span className={stylesSpanNavLink}>{home.id}</span> {home.path}
           </NavLink>
 
           <NavLink
             style={({ isActive }) => isNavLinkActive(isActive)}
             className={stylesNavLink}
-            to="/destination">
-            <span className={stylesSpanNavLink}>01</span> Destination
+            to={`/${destination.path}/moon`}>
+            <span className={stylesSpanNavLink}>{destination.id}</span> {destination.path}
           </NavLink>
 
           <NavLink
             style={({ isActive }) => isNavLinkActive(isActive)}
             className={stylesNavLink}
-            to="/crew">
-            <span className={stylesSpanNavLink}>02</span> Crew
+            to={`/${crew.path}/douglas-hurley`}>
+            <span className={stylesSpanNavLink}>{crew.id}</span> {crew.path}
           </NavLink>
 
           <NavLink
             style={({ isActive }) => isNavLinkActive(isActive)}
             className={stylesNavLink}
-            to="/technology">
-            <span className={stylesSpanNavLink}>03</span> Technology
+            to={`/${technology.path}/launch-vehicle`}>
+            <span className={stylesSpanNavLink}>{technology.id}</span> {technology.path}
           </NavLink>
         </div>
       </nav>
