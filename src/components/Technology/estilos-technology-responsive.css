@@ -54,7 +54,7 @@
   }
 
   .image-technology {
-    justify-self: end;
+    justify-self: flex-end;
   }
 
   .image-technology img {
