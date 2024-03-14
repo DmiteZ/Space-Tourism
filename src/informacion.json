@@ -1,9 +1,9 @@
 {
   "header": {
     "imagenes": {
-      "logo": "/assets/shared/logo.svg",
-      "hamburger": "/assets/shared/icon-hamburger.svg",
-      "close": "/assets/shared/icon-close.svg"
+      "logo": "/space-tourism/assets/shared/logo.svg",
+      "hamburger": "/space-tourism/assets/shared/icon-hamburger.svg",
+      "close": "/space-tourism/assets/shared/icon-close.svg"
     },
     "home": {
       "id": "00",
@@ -38,7 +38,7 @@
         "titulo": "moon",
         "descripcion": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
         "imagen": {
-          "url": "/assets/destination/image-moon.webp",
+          "url": "/space-tourism/assets/destination/image-moon.webp",
           "alt": "Imagen de la Luna"
         },
         "distancia": {
@@ -54,7 +54,7 @@
         "titulo": "marts",
         "descripcion": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
         "imagen": {
-          "url": "/assets/destination/image-mars.webp",
+          "url": "/space-tourism/assets/destination/image-mars.webp",
           "alt": "Imagen de Marte"
         },
         "distancia": {
@@ -70,7 +70,7 @@
         "titulo": "europa",
         "descripcion": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
         "imagen": {
-          "url": "/assets/destination/image-europa.webp",
+          "url": "/space-tourism/assets/destination/image-europa.webp",
           "alt": "Imagen de Europa"
         },
         "distancia": {
@@ -86,7 +86,7 @@
         "titulo": "titan",
         "descripcion": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
         "imagen": {
-          "url": "/assets/destination/image-titan.webp",
+          "url": "/space-tourism/assets/destination/image-titan.webp",
           "alt": "Imagen de Europa"
         },
         "distancia": {
@@ -111,7 +111,7 @@
         "cargo": "commander",
         "descripcion": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
         "imagen": {
-          "url": "/assets/crew/image-douglas-hurley.webp",
+          "url": "/space-tourism/assets/crew/image-douglas-hurley.webp",
           "alt": "Commander | Douglas Hurley"
         }
       },
@@ -121,7 +121,7 @@
         "cargo": "mision specialist",
         "descripcion": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
         "imagen": {
-          "url": "/assets/crew/image-mark-shuttleworth.webp",
+          "url": "/space-tourism/assets/crew/image-mark-shuttleworth.webp",
           "alt": "Mision Specialist | Mark Shuttleworth"
         }
       },
@@ -131,7 +131,7 @@
         "cargo": "pilot",
         "descripcion": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.",
         "imagen": {
-          "url": "/assets/crew/image-victor-glover.webp",
+          "url": "/space-tourism/assets/crew/image-victor-glover.webp",
           "alt": "Copilot | Victor Glover"
         }
       },
@@ -141,7 +141,7 @@
         "cargo": "flight engineer",
         "descripcion": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
         "imagen": {
-          "url": "/assets/crew/image-anousheh-ansari.webp",
+          "url": "/space-tourism/assets/crew/image-anousheh-ansari.webp",
           "alt": "Copilot | Victor Glover"
         }
       }
@@ -158,8 +158,8 @@
         "descripcion": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earths surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, its quite an awe-inspiring sight on the launch pad!",
         "imagen": {
           "url": [
-            "/assets/technology/image-launch-vehicle-portrait.webp",
-            "/assets/technology/image-launch-vehicle-landscape.webp"
+            "/space-tourism/assets/technology/image-launch-vehicle-portrait.webp",
+            "/space-tourism/assets/technology/image-launch-vehicle-landscape.webp"
           ],
           "alt": ["Launch Vehicle Portrait", "Launch Vehicle Landscape"]
         }
@@ -170,8 +170,8 @@
         "descripcion": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
         "imagen": {
           "url": [
-            "/assets/technology/image-spaceport-portrait.webp",
-            "/assets/technology/image-spaceport-landscape.webp"
+            "/space-tourism/assets/technology/image-spaceport-portrait.webp",
+            "/space-tourism/assets/technology/image-spaceport-landscape.webp"
           ],
           "alt": ["Space Port Portrait", "Space Port Landscape"]
         }
@@ -182,8 +182,8 @@
         "descripcion": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earths atmosphere without wings. Our capsule is where you will spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
         "imagen": {
           "url": [
-            "/assets/technology/image-space-capsule-portrait.webp",
-            "/assets/technology/image-space-capsule-landscape.webp"
+            "/space-tourism/assets/technology/image-space-capsule-portrait.webp",
+            "/space-tourism/assets/technology/image-space-capsule-landscape.webp"
           ],
           "alt": ["Space Capsule Portrait", "Space Capsule Landscape"]
         }
