@@ -1,5 +1,5 @@
 import React from 'react';
-import useScreenSize from '../../use-screen.js';
+import useScreenSize from '../hooks/use-screen.js';
 
 export default function termino({ technology, subtitulo }) {
   const { titulo, descripcion, imagen } = technology;
