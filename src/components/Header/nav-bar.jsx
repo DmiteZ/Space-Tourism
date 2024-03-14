@@ -59,21 +59,27 @@ export default function NavBar() {
           </NavLink>
 
           <NavLink
-            style={({ isActive }) => isNavLinkActive(isActive)}
+            style={({ isActive }) =>
+              isNavLinkActive(isActive || location.hash.includes(`/${destination.path}`))
+            }
             className={stylesNavLink}
             to={`/${destination.path}/moon`}>
             <span className={stylesSpanNavLink}>{destination.id}</span> {destination.path}
           </NavLink>
 
           <NavLink
-            style={({ isActive }) => isNavLinkActive(isActive)}
+            style={({ isActive }) =>
+              isNavLinkActive(isActive || location.hash.includes(`/${crew.path}`))
+            }
             className={stylesNavLink}
             to={`/${crew.path}/douglas-hurley`}>
             <span className={stylesSpanNavLink}>{crew.id}</span> {crew.path}
           </NavLink>
 
           <NavLink
-            style={({ isActive }) => isNavLinkActive(isActive)}
+            style={({ isActive }) =>
+              isNavLinkActive(isActive || location.hash.includes(`/${technology.path}`))
+            }
             className={stylesNavLink}
             to={`/${technology.path}/launch-vehicle`}>
             <span className={stylesSpanNavLink}>{technology.id}</span> {technology.path}
