@@ -49,7 +49,7 @@
   }
 
   .circle {
-    justify-self: end;
+    justify-self: flex-end;
   }
 
   .section-home {
