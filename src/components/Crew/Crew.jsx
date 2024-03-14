@@ -7,8 +7,8 @@ import Miembros from './miembros';
 
 export default function Crew() {
   return (
-    <main className="main-crew w-full h-max bg-no-repeat bg-cover grid grid-cols-1 grid-rows-1 lg:h-screen lg:w-screen">
-      <section className="section-crew w-full h-full lg:w-screen">
+    <main className="main-crew w-full h-max bg-no-repeat bg-cover grid grid-cols-1 grid-rows-1 lg:h-screen">
+      <section className="section-crew w-full h-full">
         <h1 className="title-barlow">
           <span className="text-white opacity-25">{crew.id}</span> {crew.titulo}
         </h1>
